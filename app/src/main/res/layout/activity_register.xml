@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/transparentgrey"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_margin="@dimen/margin10"
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+       <ImageView
+           android:id="@+id/imgview_logo"
+           android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height100" />
+
+
+        <TextView
+            android:gravity="center"
+            android:textSize="@dimen/text_18"
+            android:textStyle="italic"
+            android:textColor="@color/darkorange"
+            android:text="Register Now!!"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/spinner_category"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:backgroundTint="@color/lightgrey"
+            android:paddingBottom="@dimen/margin5"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height40"/>
+
+        <Spinner
+            android:id="@+id/spinner_sellertype"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:backgroundTint="@color/lightgrey"
+            android:paddingBottom="@dimen/padding5"
+           android:layout_marginTop="@dimen/margin10"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height40"/>
+
+        <EditText
+            android:id="@+id/edttxt_businessname"
+            android:layout_marginTop="@dimen/margin10"
+            android:paddingLeft="@dimen/padding5"
+            android:paddingStart="@dimen/padding5"
+            android:paddingEnd="@dimen/padding5"
+            android:paddingRight="@dimen/padding5"
+            android:inputType="text"
+            android:hint="Enter your bussiness name"
+            android:background="@drawable/rounded_border"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height40" />
+
+        <EditText
+            android:id="@+id/edttxt_Tinno"
+            android:layout_marginTop="@dimen/margin10"
+            android:paddingLeft="@dimen/padding5"
+            android:paddingStart="@dimen/padding5"
+            android:paddingEnd="@dimen/padding5"
+            android:inputType="text"
+            android:paddingRight="@dimen/padding5"
+            android:hint="Please enter valid UAN No/Aadhar no (Optional)"
+            android:background="@drawable/rounded_border"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height40" />
+
+
+        <EditText
+            android:id="@+id/edttxt_midno"
+            android:layout_marginTop="@dimen/margin10"
+            android:paddingLeft="@dimen/padding5"
+            android:paddingStart="@dimen/padding5"
+            android:paddingEnd="@dimen/padding5"
+            android:paddingRight="@dimen/padding5"
+            android:inputType="text"
+            android:hint="Please enter valid MID No. (Optional)"
+            android:background="@drawable/rounded_border"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height40" />
+
+        <EditText
+            android:id="@+id/edttxt_tidno"
+            android:layout_marginTop="@dimen/margin10"
+            android:paddingLeft="@dimen/padding5"
+            android:paddingStart="@dimen/padding5"
+            android:paddingEnd="@dimen/padding5"
+            android:paddingRight="@dimen/padding5"
+            android:inputType="text"
+            android:hint="Please enter valid TID No.(Optional)"
+            android:background="@drawable/rounded_border"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height40" />
+
+        <EditText
+            android:id="@+id/edttxt_gstno"
+            android:layout_marginTop="@dimen/margin10"
+            android:paddingLeft="@dimen/padding5"
+            android:paddingStart="@dimen/padding5"
+            android:paddingEnd="@dimen/padding5"
+            android:inputType="text"
+            android:paddingRight="@dimen/padding5"
+            android:hint="Please enter valid GST No.(Optional)"
+            android:background="@drawable/rounded_border"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height40" />
+        <LinearLayout
+            android:layout_margin="@dimen/margin10"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="@dimen/margin10"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_18"
+                android:text="Upload your Store Image (Optional) "
+                android:textColor="@color/darkorange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        <ImageView
+
+            android:padding="@dimen/padding10"
+            android:id="@+id/imgview_store"
+            android:background="@drawable/rounded_border"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_width="@dimen/width200"
+            android:layout_height="@dimen/height150" />
+
+
+
+        <Button
+
+            android:id="@+id/btn_upload"
+            android:layout_marginTop="@dimen/margin5"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:text="Upload"
+            android:background="@color/lightgreen"
+            android:layout_width="@dimen/width200"
+            android:layout_height="@dimen/height50" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_marginTop="@dimen/margin20"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:text="Next"
+            android:background="@color/lightgreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

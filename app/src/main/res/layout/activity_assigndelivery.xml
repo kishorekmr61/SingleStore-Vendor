@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toptoolbar"
+            android:background="@color/orange"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:layout_marginLeft="@dimen/margin5"
+                    android:layout_marginStart="@dimen/margin5"
+                    android:id="@+id/txtview_vendorname"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+
+                    android:layout_marginTop="@dimen/margin2"
+                    android:layout_marginLeft="@dimen/margin5"
+                    android:layout_marginStart="@dimen/margin5"
+                    android:id="@+id/txtview_branchname"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <LinearLayout
+            android:layout_above="@+id/btn_submit"
+            android:layout_below="@+id/toptoolbar"
+        android:layout_margin="@dimen/margin10"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Customer Name:"
+                android:textSize="@dimen/text_14"
+                android:textStyle="italic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginLeft="@dimen/margin5"
+                android:textSize="@dimen/text_14"
+                android:id="@+id/txtview_customername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/margin5"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Mobile No:"
+                android:textSize="@dimen/text_14"
+                android:textStyle="italic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginLeft="@dimen/margin5"
+                android:textSize="@dimen/text_14"
+                android:id="@+id/txtview_mobileno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/margin5"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Order Id:"
+                android:textSize="@dimen/text_14"
+                android:textStyle="italic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginLeft="@dimen/margin5"
+                android:textSize="@dimen/text_14"
+                android:id="@+id/txtview_orderid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/margin5"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Order Type:"
+                android:textSize="@dimen/text_14"
+                android:textStyle="italic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginLeft="@dimen/margin5"
+                android:textSize="@dimen/text_14"
+                android:id="@+id/txtview_ordertype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <Spinner
+            android:layout_margin="@dimen/margin10"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:layout_marginTop="@dimen/margin2"
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <Button
+        android:layout_margin="@dimen/margin10"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btn_submit"
+        android:textColor="@color/white"
+        android:text="Submit"
+        android:layout_marginTop="@dimen/margin20"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

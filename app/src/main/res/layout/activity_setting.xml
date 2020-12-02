@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/dimgray"
+    android:layout_height="match_parent">
+
+<android.support.v7.widget.Toolbar
+    android:id="@+id/toolbar"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:layout_centerInParent="true"
+        android:text="@string/setting"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+        <View
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_below="@id/toolbar"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/margin10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<LinearLayout
+    android:id="@+id/lnrlayout_storeinfo"
+    android:layout_marginTop="@dimen/margin10"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Store Information"
+            android:drawableRight="@drawable/arrowicon"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_marginTop="@dimen/margin10"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+</LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnrlayout_bankdetail"
+            android:layout_marginTop="@dimen/margin10"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Bank Details"
+                android:drawableRight="@drawable/arrowicon"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_marginTop="@dimen/margin10"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/lnrlayout_storemsg"
+            android:layout_marginTop="@dimen/margin10"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Store Message"
+                android:drawableRight="@drawable/arrowicon"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_marginTop="@dimen/margin10"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnrlayout_storeholiday"
+            android:layout_marginTop="@dimen/margin10"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Create Store Holiday"
+                android:drawableRight="@drawable/arrowicon"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_marginTop="@dimen/margin10"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnrlayout_ordertype"
+            android:layout_marginTop="@dimen/margin10"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Set Order Type"
+                android:textColor="@color/white"
+                android:drawableRight="@drawable/arrowicon"
+                android:textSize="@dimen/text_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_marginTop="@dimen/margin10"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lnrlayout_otherinfo"
+            android:layout_marginTop="@dimen/margin10"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Other Information"
+                android:textColor="@color/white"
+                android:drawableRight="@drawable/arrowicon"
+                android:textSize="@dimen/text_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_marginTop="@dimen/margin10"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lnrlayout_documents"
+            android:layout_marginTop="@dimen/margin10"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Documents"
+                android:drawableRight="@drawable/arrowicon"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_marginTop="@dimen/margin10"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

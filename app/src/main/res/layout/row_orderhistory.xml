@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+   <android.support.v7.widget.CardView
+       android:id="@+id/cardview"
+       android:layout_marginTop="@dimen/margin10"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <LinearLayout
+           android:layout_margin="@dimen/margin5"
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <RelativeLayout
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <LinearLayout
+                   android:layout_alignParentStart="true"
+                   android:layout_alignParentLeft="true"
+                   android:orientation="vertical"
+                   android:layout_gravity="start"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+
+           <TextView
+               android:id="@+id/txtview_name"
+               android:text="Amandeep Singh"
+               android:textStyle="bold"
+               android:textSize="@dimen/text_16"
+               android:textColor="@color/darkorange"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+
+           <TextView
+               android:id="@+id/txtview_mobileno"
+               android:text="+915678826228"
+               android:layout_marginTop="@dimen/margin5"
+               android:textSize="@dimen/text_14"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+
+               </LinearLayout>
+
+
+               <LinearLayout
+                   android:layout_alignParentRight="true"
+                   android:layout_alignParentEnd="true"
+                   android:orientation="vertical"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+
+                   <TextView
+                       android:id="@+id/txtview_paymenttype"
+                       android:text="Paid"
+                       android:layout_gravity="end"
+                       android:layout_marginTop="@dimen/margin5"
+                       android:padding="@dimen/padding5"
+                       android:background="@color/lightorange"
+                       android:textColor="@color/white"
+                       android:textStyle="bold"
+                       android:textSize="@dimen/text_16"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+
+                   <TextView
+                       android:id="@+id/txtview_date"
+                       android:text="12/09/18"
+                       android:layout_marginTop="@dimen/margin5"
+                       android:textSize="@dimen/text_14"
+                       android:layout_gravity="center"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+
+
+
+
+               </LinearLayout>
+
+
+
+           </RelativeLayout>
+
+
+
+
+
+           <LinearLayout
+               android:orientation="horizontal"
+               android:weightSum="3"
+               android:layout_gravity="center"
+               android:gravity="center"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <LinearLayout
+                  android:layout_marginTop="@dimen/margin5"
+                   android:layout_weight="1"
+                   android:orientation="vertical"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <TextView
+                       android:layout_gravity="center"
+                       android:text="Order Id"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+
+                   <TextView
+                       android:id="@+id/txtview_orderid"
+                       android:text="1234528782799"
+                       android:layout_gravity="center"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_weight="1"
+                   android:orientation="vertical"
+                   android:layout_marginTop="@dimen/margin5"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <TextView
+                       android:text="Order Amount"
+                       android:layout_gravity="center"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+
+                   <TextView
+                       android:id="@+id/txtview_orderamount"
+                       android:text="12345"
+                       android:layout_gravity="center"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+
+               </LinearLayout>
+
+
+               <LinearLayout
+                   android:layout_weight="1"
+                   android:layout_marginTop="@dimen/margin5"
+                   android:orientation="vertical"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <TextView
+                       android:text="Order Status"
+                       android:layout_gravity="center"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+
+                   <TextView
+                       android:id="@+id/txtview_ordersatatus"
+                       android:text="12345"
+                       android:layout_gravity="center"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+
+               </LinearLayout>
+
+
+
+
+
+
+           </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+       </LinearLayout>
+
+
+
+
+
+
+
+   </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

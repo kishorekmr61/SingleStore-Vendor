@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+  <RelativeLayout
+      android:layout_marginTop="@dimen/margin10"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+      <TextView
+          android:layout_toLeftOf="@id/lnrlayout"
+          android:id="@+id/text_message"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+
+      <LinearLayout
+          android:layout_marginLeft="@dimen/margin5"
+          android:orientation="horizontal"
+          android:gravity="center"
+          android:id="@+id/lnrlayout"
+          android:layout_alignParentRight="true"
+          android:layout_alignParentEnd="true"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+
+          <Button
+              android:id="@+id/btn_showthis"
+              android:background="@color/lightgreen"
+              android:textColor="@color/white"
+              android:textSize="@dimen/text_12"
+              android:text="Show this"
+              android:layout_width="@dimen/width80"
+              android:layout_height="@dimen/height30" />
+
+          <ImageView
+              android:id="@+id/imgview_delete"
+              android:src="@mipmap/deleteicon"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+
+
+
+
+
+      </LinearLayout>
+
+
+      <View
+          android:layout_marginTop="@dimen/margin10"
+          android:layout_below="@id/lnrlayout"
+          android:background="@color/dimgray"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/height1"/>
+
+  </RelativeLayout>
+
+</RelativeLayout>

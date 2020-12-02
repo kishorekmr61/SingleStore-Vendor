@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin10"
+        android:layout_marginLeft="@dimen/margin10"
+        android:layout_marginTop="@dimen/margin20"
+        android:layout_marginEnd="@dimen/margin10"
+        android:layout_marginRight="@dimen/margin10"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/radius5"
+        app:cardElevation="@dimen/radius5"
+        app:contentPadding="@dimen/padding8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height40"
+                android:layout_weight="0.8"
+                android:background="@null"
+                android:hint="Search Location"
+                android:imeOptions="actionDone"
+                android:inputType="textPersonName" />
+
+            <LinearLayout
+                android:id="@+id/serch_lyout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_weight="0.1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/width25"
+                    android:layout_height="@dimen/height35"
+                    android:src="@drawable/ic_research" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin5"
+        tools:context=".GetLocationActivity" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/currentlocation_lyout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height120"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin10"
+        android:padding="@dimen/padding10"
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/colorPrimaryDark">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:padding="@dimen/padding8">
+
+                <TextView
+                    android:id="@+id/address_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto_medium"
+                    android:maxLines="3"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_18"
+                    tools:text="@string/app_name" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.2"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/btn_next"
+                    android:layout_width="@dimen/width80"
+                    android:layout_height="@dimen/height55"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_ok"
+                    android:text="@string/next"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+       android:layout_margin="@dimen/margin20"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:paddingLeft="@dimen/padding5"
+            android:paddingStart="@dimen/padding5"
+            android:paddingEnd="@dimen/padding5"
+            android:paddingRight="@dimen/padding5"
+            android:hint="Item Name"
+            android:inputType="text"
+            android:background="@drawable/rounded_border"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/width40" />
+
+     <Spinner
+         android:autofillHints="Category"
+         android:layout_marginTop="@dimen/margin5"
+         style="@style/Widget.AppCompat.Spinner.Underlined"
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/width40"/>
+
+
+        <Spinner
+            android:layout_marginTop="@dimen/margin5"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/width40"/>
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/margin10"
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/padding5"
+                android:paddingStart="@dimen/padding5"
+                android:paddingEnd="@dimen/padding5"
+                android:paddingRight="@dimen/padding5"
+                android:hint="Item Price"
+                android:inputType="number"
+                android:background="@drawable/rounded_border"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width40" />
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textSize="@dimen/text_16"
+                    android:text="Offer?"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <EditText
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/padding5"
+                android:paddingStart="@dimen/padding5"
+                android:paddingEnd="@dimen/padding5"
+                android:paddingRight="@dimen/padding5"
+                android:hint="Offer Price"
+                android:inputType="number"
+                android:background="@drawable/rounded_border"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width40" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/margin20"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:layout_weight="1"
+                android:autofillHints="Category"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width40"/>
+
+
+            <EditText
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/margin5"
+                android:paddingLeft="@dimen/padding5"
+                android:paddingStart="@dimen/padding5"
+                android:paddingEnd="@dimen/padding5"
+                android:paddingRight="@dimen/padding5"
+                android:hint="Instock Count"
+                android:inputType="text"
+                android:background="@drawable/rounded_border"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width40" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_marginTop="@dimen/margin30"
+            android:layout_marginLeft="@dimen/margin20"
+            android:layout_marginRight="@dimen/margin20"
+            android:layout_marginStart="@dimen/margin20"
+            android:layout_marginEnd="@dimen/margin20"
+            android:textColor="@color/white"
+            android:text="Add"
+            android:background="@color/lightblue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/margin20"
+            android:layout_marginLeft="@dimen/margin5"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textSize="@dimen/text_16"
+                android:text="Has GST"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <EditText
+            android:layout_marginTop="@dimen/margin10"
+            android:paddingLeft="@dimen/padding5"
+            android:paddingStart="@dimen/padding5"
+            android:paddingEnd="@dimen/padding5"
+            android:paddingRight="@dimen/padding5"
+            android:hint="Offer title"
+            android:inputType="text"
+            android:background="@drawable/rounded_border"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/width40" />
+
+        <EditText
+            android:layout_marginTop="@dimen/margin10"
+            android:paddingLeft="@dimen/padding5"
+            android:paddingStart="@dimen/padding5"
+            android:paddingEnd="@dimen/padding5"
+            android:paddingRight="@dimen/padding5"
+            android:hint="Tags"
+            android:inputType="text"
+            android:background="@drawable/rounded_border"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/width80" />
+
+
+        <Button
+            android:layout_marginTop="@dimen/margin30"
+            android:layout_marginLeft="@dimen/margin20"
+            android:layout_marginRight="@dimen/margin20"
+            android:layout_marginStart="@dimen/margin20"
+            android:layout_marginEnd="@dimen/margin20"
+            android:textColor="@color/white"
+            android:text="Save Item"
+            android:background="@color/lightorange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+</RelativeLayout>

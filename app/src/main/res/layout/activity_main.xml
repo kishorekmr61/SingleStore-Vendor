@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/drawerlayout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toptoolbar"
+        android:background="@color/orange"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+
+            android:layout_marginLeft="@dimen/margin5"
+            android:layout_marginStart="@dimen/margin5"
+            android:id="@+id/txtview_vendorname"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+            <TextView
+
+                android:layout_marginTop="@dimen/margin2"
+                android:layout_marginLeft="@dimen/margin5"
+                android:layout_marginStart="@dimen/margin5"
+                android:id="@+id/txtview_branchname"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:id="@+id/mainlayout"
+        android:layout_below="@+id/toptoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+    android:id="@+id/recyclerview"
+    android:layout_marginTop="@dimen/margin5"
+    android:layout_above="@+id/actionbarT"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+</android.support.v7.widget.RecyclerView>
+
+
+
+    <android.support.v7.widget.Toolbar  xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/actionbarT"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:background="@color/orange"
+        android:layout_height="?attr/actionBarSize"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/Base.Theme.AppCompat.CompactMenu" >
+
+        <LinearLayout
+            android:weightSum="4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:onClick="Clicklistener"
+                android:id="@+id/txtview_ordered"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:drawableTop="@mipmap/ordericons"
+                android:text="Ordered"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="@dimen/text_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:onClick="Clicklistener"
+                android:id="@+id/txtview_packed"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:drawableTop="@mipmap/packedicon"
+                android:text="Packed"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="@dimen/text_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:onClick="Clicklistener"
+                android:id="@+id/txtview_shipped"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:drawableTop="@mipmap/shippedicon"
+                android:text="Shipped"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="@dimen/text_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:onClick="Clicklistener"
+                android:id="@+id/txtview_delivered"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:drawableTop="@mipmap/delievered"
+                android:text="Delivered"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="@dimen/text_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_below="@+id/toptoolbar"
+        android:visibility="gone"
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigationview"
+        app:headerLayout="@layout/header"
+        android:layout_width="@dimen/width250"
+        android:layout_height="match_parent"
+        app:menu="@menu/item_menu"
+        app:itemBackground="@drawable/drawable_item_bg"
+        android:layout_gravity="start"
+
+
+        />
+
+
+
+
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/transparentgrey"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_margin="@dimen/margin10"
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_margin="@dimen/margin10"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="@dimen/margin10"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_18"
+            android:text="Upload your legal documents (Optional) "
+            android:textColor="@color/darkorange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_margin="@dimen/margin5"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_weight="1"
+                android:padding="@dimen/padding10"
+                android:id="@+id/imgview_document1"
+                android:background="@drawable/rounded_border"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin10"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height150" />
+
+            <ImageView
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_weight="1"
+                android:padding="@dimen/padding10"
+                android:id="@+id/imgview_document2"
+                android:background="@drawable/rounded_border"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin10"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height150" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="@dimen/margin10"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_18"
+            android:text="Choose Your Subscription "
+            android:textColor="@color/darkorange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <RadioButton
+
+            android:text="Economy (Free)"
+            android:checked="true"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:visibility="gone"
+            android:id="@+id/radiobtn_salesperson"
+            android:text="Pay to sales person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:visibility="gone"
+            android:paddingBottom="@dimen/padding5"
+            android:id="@+id/spinner_salesperson"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:backgroundTint="#3bbdfa"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_width="@dimen/width200"
+            android:layout_height="@dimen/height40"/>
+
+
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_marginTop="@dimen/margin40"
+            android:textColor="@color/white"
+            android:text="Register"
+            android:layout_width="match_parent"
+            android:background="@color/lightgreen"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

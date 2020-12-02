@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">IsBazaar Vendor</string>
+    <string name="file_provider_authorities">com.project.vendorsapp.provider</string>
+    <string name="mobileerror">Please Enter Mobile No.</string>
+    <string name="employeeerror">Please enter the employee name</string>
+    <string name="passworderror">Please Enter Password</string>
+    <string name="myprofile">Profile</string>
+    <string name="logout">Logout</string>
+    <string name="changepassword">Change Password</string>
+    <string name="setting">Setting </string>
+    <string name="home">Home</string>
+    <string name="orderhistory">Order History</string>
+    <string name="staff">Staff</string>
+    <string name="passwordsuccessmsg">Your password has been updated successfully and sent to your registered Mobile Number</string>
+    <string name="errortxt">Something went wrong we are working over it.Please try after some time</string>
+    <string name="busssinessnameerror">Please enter bussiness name</string>
+    <string name="tinnoerror">Please enter TIN no</string>
+    <string name="midnoerror">Please enter MID no</string>
+    <string name="tidnoerror">Please enter TID no</string>
+    <string name="gstnoerror">Please enter GST no</string>
+    <string name="ownersnameerror">Please enter owner name</string>
+    <string name="addresslineerror">Please enter address</string>
+    <string name="zipcodeerror">Please enter zip code</string>
+    <string name="banknameerror">Please enter the bank name</string>
+    <string name="accounterror">Please enter the account number</string>
+    <string name="reenteraccounterror">Please re-enter the account number</string>
+    <string name="ifsccodeerror">Please enter the IFSC code</string>
+    <string name="holdernameerror">Please enter the account holder name</string>
+    <string name="newpassworderror">Enter the new password</string>
+    <string name="confirmpassworderror">Enter the confirm password</string>
+    <string name="title_activity_tracker">Map</string>
+
+    <string name="permission_read_storage_rationale">Storage read permission is needed to pick files.</string>
+    <string name="permission_write_storage_rationale">Storage write permission is needed to save the image.</string>
+    <string name="title_activity_get_location">Map</string>
+    <string name="next">Next</string>
+    <string name="inventory">Inventory</string>
+
+
+</resources>

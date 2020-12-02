@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_centerInParent="true"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+
+      <ImageView
+          android:id="@+id/imgview_logo"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/height160" />
+
+
+      <TextView
+          android:layout_gravity="center"
+          android:textSize="@dimen/text_18"
+          android:textStyle="italic"
+          android:textColor="@color/lightblue"
+          android:text="Hello!"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+
+
+      <TextView
+          android:layout_gravity="center"
+          android:textSize="@dimen/text_18"
+          android:textStyle="italic"
+          android:textColor="@color/lightblue"
+          android:text="Login with your credentials"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+
+      <EditText
+          android:id="@+id/edttxt_mobileno"
+          android:paddingLeft="@dimen/padding5"
+          android:paddingStart="@dimen/padding5"
+          android:paddingEnd="@dimen/padding5"
+          android:paddingRight="@dimen/padding5"
+          android:drawableRight="@drawable/ic_avatar"
+          android:hint="Enter Mobile no"
+          android:inputType="number"
+          android:maxLength="10"
+          android:layout_margin="@dimen/margin20"
+          android:background="@drawable/rounded_border"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/width40" />
+
+
+      <EditText
+          android:id="@+id/edttxt_password"
+          android:paddingLeft="@dimen/padding5"
+          android:paddingStart="@dimen/padding5"
+          android:paddingEnd="@dimen/padding5"
+          android:paddingRight="@dimen/padding5"
+          android:layout_marginLeft="@dimen/margin20"
+          android:layout_marginRight="@dimen/margin20"
+          android:layout_marginStart="@dimen/margin20"
+          android:layout_marginEnd="@dimen/margin20"
+          android:drawableRight="@drawable/ic_password"
+          android:inputType="textWebPassword"
+          android:hint="Enter Password"
+          android:background="@drawable/rounded_border"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/width40" />
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+      <TextView
+          android:id="@+id/txtview_forgotpassword"
+          android:textColor="@color/orange"
+          android:layout_alignParentRight="true"
+          android:layout_marginTop="@dimen/margin10"
+          android:layout_marginLeft="@dimen/margin20"
+          android:layout_marginRight="@dimen/margin20"
+          android:layout_marginStart="@dimen/margin20"
+          android:layout_marginEnd="@dimen/margin20"
+          android:text="Forgot Password?"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+
+          <TextView
+              android:id="@+id/txtview_createaccount"
+              android:textColor="@color/orange"
+              android:layout_marginTop="@dimen/margin10"
+              android:layout_marginLeft="@dimen/margin20"
+              android:layout_marginRight="@dimen/margin20"
+              android:layout_marginStart="@dimen/margin20"
+              android:layout_marginEnd="@dimen/margin20"
+              android:text="Register your store"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+
+      </RelativeLayout>
+
+
+      <Button
+          android:id="@+id/btn_login"
+          android:layout_marginTop="@dimen/margin20"
+          android:layout_marginLeft="@dimen/margin20"
+          android:layout_marginRight="@dimen/margin20"
+          android:layout_marginStart="@dimen/margin20"
+          android:layout_marginEnd="@dimen/margin20"
+          android:textColor="@color/white"
+          android:text="Login Now"
+          android:background="@color/lightblue"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+
+
+
+
+  </LinearLayout>
+
+
+
+</RelativeLayout>
+

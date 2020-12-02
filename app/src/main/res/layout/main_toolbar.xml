@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/orange"
+    app:navigationIcon="@drawable/ic_backicon"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/imgview_logo"
+        android:layout_width="@dimen/width100"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        />
+    <TextView
+
+        android:layout_marginLeft="@dimen/margin5"
+        android:layout_marginStart="@dimen/margin5"
+        android:id="@+id/txtview_vendorname"
+        android:textColor="@color/white"
+        android:text="Notifications"
+        android:textSize="@dimen/text_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+</android.support.v7.widget.Toolbar>
+

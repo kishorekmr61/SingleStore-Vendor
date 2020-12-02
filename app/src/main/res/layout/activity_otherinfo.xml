@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transparentgrey"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+
+    <ScrollView
+        android:layout_marginBottom="@dimen/margin10"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_margin="@dimen/margin10"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                app:cardCornerRadius="@dimen/radius10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/lnrlayout_gstmain"
+                android:layout_margin="@dimen/margin5"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:text="Tax Information"
+                    android:textColor="@color/dimblack"
+                   android:layout_marginTop="@dimen/margin5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_marginTop="@dimen/margin5"
+                    android:background="@color/lightgrey"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height1"/>
+
+                <RadioButton
+                    android:id="@+id/radiobtn_gst"
+                    android:layout_width="wrap_content"
+                    android:text=" GST Applicable"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/margin5"
+                    android:id="@+id/lnrlayout_gst"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <EditText
+                        android:layout_marginTop="@dimen/margin10"
+                        android:id="@+id/edttxt_gstno"
+                        android:paddingLeft="@dimen/padding5"
+                        android:paddingStart="@dimen/padding5"
+                        android:paddingEnd="@dimen/padding5"
+                        android:paddingRight="@dimen/padding5"
+                        android:hint="Enter the GST number"
+                        android:background="@drawable/rounded_border"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/width40" />
+
+                    <EditText
+                        android:layout_marginTop="@dimen/margin10"
+                        android:id="@+id/edttxt_gstpercentage"
+                        android:paddingLeft="@dimen/padding5"
+                        android:paddingStart="@dimen/padding5"
+                        android:paddingEnd="@dimen/padding5"
+                        android:paddingRight="@dimen/padding5"
+                        android:hint="Enter the GST percentage of your"
+                        android:inputType="number"
+                        android:background="@drawable/rounded_border"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/width40" />
+
+
+
+                </LinearLayout>
+                <Button
+                    android:id="@+id/btn_gstsave"
+                    android:layout_marginTop="@dimen/margin20"
+                    android:layout_gravity="right"
+                    android:textColor="@color/white"
+                    android:text="Save"
+                    android:background="@color/lightgreen"
+                    android:layout_width="@dimen/width120"
+                    android:layout_height="@dimen/margin35" />
+
+            </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="@dimen/margin10"
+                app:cardCornerRadius="@dimen/radius10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_margin="@dimen/margin5"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_gravity="center"
+                android:text="Discount Information"
+                android:textColor="@color/dimblack"
+                android:layout_marginTop="@dimen/margin5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_marginTop="@dimen/margin5"
+                android:background="@color/lightgrey"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height1"/>
+
+            <RadioButton
+                android:id="@+id/radiobtn_discount"
+                android:layout_width="wrap_content"
+                android:text="Discount on Order Price"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/margin5"
+                android:id="@+id/lnrlayout_discount"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_marginTop="@dimen/margin10"
+                    android:id="@+id/edttxt_aboveorder"
+                    android:paddingLeft="@dimen/padding5"
+                    android:paddingStart="@dimen/padding5"
+                    android:paddingEnd="@dimen/padding5"
+                    android:paddingRight="@dimen/padding5"
+                    android:hint="All orders Above(RS.4000)"
+                    android:inputType="number"
+                    android:background="@drawable/rounded_border"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/width40" />
+
+                <EditText
+                    android:layout_marginTop="@dimen/margin10"
+                    android:id="@+id/edttxt_discountpercentage"
+                    android:paddingLeft="@dimen/padding5"
+                    android:paddingStart="@dimen/padding5"
+                    android:paddingEnd="@dimen/padding5"
+                    android:paddingRight="@dimen/padding5"
+                    android:hint="Get Discount(%, OFF etc..)"
+                    android:inputType="number"
+                    android:background="@drawable/rounded_border"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/width40" />
+
+
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_discountsave"
+                android:layout_marginTop="@dimen/margin20"
+                android:layout_gravity="right"
+                android:textColor="@color/white"
+                android:text="Save"
+                android:background="@color/lightgreen"
+                android:layout_width="@dimen/width120"
+                android:layout_height="@dimen/margin35" />
+
+
+
+
+        </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="@dimen/margin10"
+                app:cardCornerRadius="@dimen/radius10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_margin="@dimen/margin5"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:text="Order Response"
+                        android:textColor="@color/dimblack"
+                        android:layout_marginTop="@dimen/margin5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:layout_marginTop="@dimen/margin5"
+                        android:background="@color/lightgrey"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height1"/>
+
+
+
+            <EditText
+                android:layout_marginTop="@dimen/margin10"
+                android:id="@+id/edttxt_responsetime"
+                android:padding="@dimen/padding5"
+                android:inputType="text"
+                android:hint="Enter response time(5 min)"
+                android:background="@drawable/rounded_border"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width40" />
+
+
+            <Button
+                android:id="@+id/btn_responsesave"
+                android:layout_marginTop="@dimen/margin20"
+                android:layout_gravity="right"
+                android:textColor="@color/white"
+                android:text="Save"
+                android:background="@color/lightgreen"
+                android:layout_width="@dimen/width120"
+                android:layout_height="@dimen/margin35" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_marginTop="@dimen/margin10"
+            app:cardCornerRadius="@dimen/radius10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_margin="@dimen/margin5"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_gravity="center"
+                android:text="Set Delivery Charges"
+                android:textColor="@color/dimblack"
+                android:layout_marginTop="@dimen/margin5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_marginTop="@dimen/margin5"
+                android:background="@color/lightgrey"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height1"/>
+
+
+            <Spinner
+                android:paddingBottom="@dimen/padding5"
+                android:id="@+id/spinner_distance"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:backgroundTint="@color/lightgrey"
+                android:layout_marginTop="@dimen/margin10"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height40"/>
+
+            <EditText
+                android:layout_marginTop="@dimen/margin10"
+                android:id="@+id/edttxt_amount"
+                android:paddingLeft="@dimen/padding5"
+                android:paddingStart="@dimen/padding5"
+                android:paddingEnd="@dimen/padding5"
+                android:paddingRight="@dimen/padding5"
+                android:hint="Enter the charges"
+                android:inputType="number"
+                android:background="@drawable/rounded_border"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width40" />
+
+            <Button
+                android:id="@+id/btn_deliverysave"
+                android:layout_marginTop="@dimen/margin20"
+                android:layout_gravity="right"
+                android:textColor="@color/white"
+                android:text="Save"
+                android:background="@color/lightgreen"
+                android:layout_width="@dimen/width120"
+                android:layout_height="@dimen/margin35" />
+        </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_marginTop="@dimen/margin10"
+            app:cardCornerRadius="@dimen/radius10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_margin="@dimen/margin5"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_gravity="center"
+                android:text="Current Delivery charges"
+                android:textColor="@color/dimblack"
+                android:layout_marginTop="@dimen/margin5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_marginTop="@dimen/margin5"
+                android:background="@color/lightgrey"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height1"/>
+
+
+            <LinearLayout
+                android:id="@+id/lnrlayout_deliverycharges"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="@dimen/margin5"
+                android:id="@+id/recyclerview_delivercharges"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

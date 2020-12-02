@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <android.support.v7.widget.CardView
+      android:layout_marginTop="@dimen/margin5"
+      app:cardCornerRadius="@dimen/radius10"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_margin="@dimen/margin5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/lnrlyt"
+            android:layout_width="@dimen/width100"
+            android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgview"
+            android:layout_width="@dimen/width100"
+            android:layout_centerInParent="true"
+            android:layout_height="@dimen/height100" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_toRightOf="@id/lnrlyt"
+            android:layout_marginLeft="@dimen/margin10"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtview_title"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_16"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="@dimen/margin5"
+                android:id="@+id/txtview_message"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/text_14"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/margin20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <TextView
+                    android:id="@+id/txtview_time"
+                    android:drawableLeft="@drawable/ic_clockicon"
+                    android:drawablePadding="@dimen/padding5"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/text_14"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_marginLeft="@dimen/margin25"
+                    android:layout_toRightOf="@id/txtview_time"
+                    android:drawableLeft="@drawable/ic_calendaricon"
+                    android:drawablePadding="@dimen/padding5"
+                    android:id="@+id/txtview_date"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/text_14"
+                    android:layout_height="wrap_content" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+  </android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>
